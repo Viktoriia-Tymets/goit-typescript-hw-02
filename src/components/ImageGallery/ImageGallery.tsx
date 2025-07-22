@@ -9,7 +9,7 @@ interface Image {
     small: string;
     regular?: string;
   };
-  alt_description: string;
+  alt_description?: string | null;
   [key: string]: any;
 }
 
