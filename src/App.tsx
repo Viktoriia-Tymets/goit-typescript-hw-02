@@ -12,7 +12,7 @@ interface UnsplashImage {
     small: string;
     regular: string;
   };
-  alt_description: string | null;
+  alt_description?: string;
   [key: string]: any;
 }
 
