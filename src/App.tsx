@@ -10,7 +10,7 @@ interface UnsplashImage {
   id: string;
   urls: {
     small: string;
-    regular?: string;
+    regular: string;
   };
   alt_description?: string | null;
   [key: string]: any;
@@ -34,7 +34,7 @@ const fetchFotos = async (query: string, page: number): Promise<FetchFotosRespon
       throw new Error("Please try again...");
     }
 
-    const data: FetchFotosResponse = await response.json();
+    const data: FetchFotosResponse = await responce.json();
   return data;
 };
 
