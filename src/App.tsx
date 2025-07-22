@@ -10,9 +10,9 @@ interface UnsplashImage {
   id: string;
   urls: {
     small: string;
-    regular: string;
+    regular?: string;
   };
-  alt_description?: string;
+  alt_description?: string | null;
   [key: string]: any;
 }
 
