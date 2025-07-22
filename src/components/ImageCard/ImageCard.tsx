@@ -4,7 +4,7 @@ interface ImageCardProps {
   src: string;
   alt: string;
 }
-export default function ImageCard: React.FC<ImageCardProps> = ({ src, alt }) {
+const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
     return (
       <div>
         <img src={src} alt={alt} style={{ width: "100%", borderRadius: "8px" }} />
@@ -12,4 +12,4 @@ export default function ImageCard: React.FC<ImageCardProps> = ({ src, alt }) {
     );
   }
   
-  
+  export default ImageCard;

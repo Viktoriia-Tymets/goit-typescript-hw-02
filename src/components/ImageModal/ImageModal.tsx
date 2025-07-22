@@ -34,7 +34,7 @@ const modalStyles = {
   },
 };
 
-export default function ImageModal: React.FC<ImageModalProps> = ({ image, onCloseModal }) {
+const ImageModal: React.FC<ImageModalProps> = ({ image, onCloseModal }) => {
   const closeModal = () => {
     onCloseModal(true);
   };
@@ -53,3 +53,5 @@ export default function ImageModal: React.FC<ImageModalProps> = ({ image, onClos
     </>
   );
 }
+
+export default ImageModal;

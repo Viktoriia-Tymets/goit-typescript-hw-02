@@ -18,11 +18,11 @@ interface Props {
   handleOpenModal: (image: Image) => void;
 }
 
-export default function ImageGallery: React.FC<Props> = ({
+const ImageGallery: React.FC<Props> = ({
   images,
   handleLoadMore,
   handleOpenModal,
-}) {
+}) => {
   return (
     <>
       <ul className={css.gallery}>
@@ -36,3 +36,5 @@ export default function ImageGallery: React.FC<Props> = ({
     </>
   );
 }
+
+export default ImageGallery;
