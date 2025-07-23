@@ -27,13 +27,19 @@ const ImageGallery: React.FC<Props> = ({
   return (
     <>
       <ul className={css.gallery}>
-        {images.map((el) => (
-          <li key={el.id} onClick={() => handleOpenModal(el)}>
-            <ImageCard src={el.urls.small} alt={el.alt_description} />
+        {images.map((image) => (
+          <li key={image.id} onClick={() => handleOpenModal(image)}>
+            <ImageCard
+              src={image.urls.small}
+              alt={image.alt_description ?? "Image"}
+            />
           </li>
         ))}
       </ul>
-      <LoadMoreBtn handleClick={handleLoadMore} />
+
+      <div className={css.loadMoreWrapper}>
+        <LoadMoreBtn handleClick={handleLoadMore} />
+      </div>
     </>
   );
 }
