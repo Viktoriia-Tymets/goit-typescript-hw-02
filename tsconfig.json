@@ -11,8 +11,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": false
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

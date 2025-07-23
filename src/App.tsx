@@ -97,7 +97,7 @@ export default function App() {
       {currentImg && (
         <ImageModal
           image={currentImg}
-          handleCloseModal={() => setCurrentImg(null)}
+          onCloseModal={() => setCurrentImg(null)}
         />
       )}
     </>
