@@ -5,11 +5,11 @@ interface ImageCardProps {
   alt: string;
 }
 const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
-    return (
-      <div>
-        <img src={src} alt={alt} style={{ width: "100%", borderRadius: "8px" }} />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <img src={src} alt={alt || "Image"} style={{ width: "100%", borderRadius: "8px" }} />
+    </div>
+  );
+}
   
   export default ImageCard;
