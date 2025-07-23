@@ -2,7 +2,7 @@ import React from "react";
 
 interface ImageCardProps {
   src: string;
-  alt?: string | ;
+  alt?: string | null;
 }
 const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
   return (
@@ -10,6 +10,6 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
       <img src={src} alt={alt || "Image"} style={{ width: "100%", borderRadius: "8px" }} />
     </div>
   );
-}
+};
   
   export default ImageCard;
